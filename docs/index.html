@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <title>HTML GENERATOR</title>
+    <link rel="stylesheet" href="jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="layout.css">
+
+
+</head>
+<body>
+
+
+<div class="header">
+
+
+    <div class="generateHTMLButton">
+        <span>GENERATE HTML</span>
+    </div>
+
+    <div class="enterHTMLButton is-visible">
+        <span>ENTER HTML</span>
+    </div>
+
+    <div class="createLayoutButton is-hidden">
+        <span>CREATE LAYOUT</span>
+    </div>
+
+
+</div>
+
+<div class="content">
+
+    <template id="tagBoxTpl">
+        <div class="tagBox is-hidden" tabindex="0">
+        </div>
+    </template>
+
+    <div id="compPanel">
+        <div class="createTagWrapper">
+            <input placeholder="ADD A TAG" class="createTagInput">
+            <div class="createTagButton">+</div>
+        </div>
+        <div class="tag tagLabel codeTag" data-tagName="CODE"></div>
+        <div class="tag tagLabel" data-tagName="<head>"></div>
+        <div class="tag tagLabel" data-tagName="<title>"></div>
+        <div class="tag tagLabel" data-tagName="<body>"></div>
+        <div class="tag tagLabel" data-tagName="<div>"></div>
+        <div class="tag tagLabel" data-tagName="<span>"></div>
+        <div class="tag tagLabel" data-tagName="<p>"></div>
+        <div class="tag tagLabel" data-tagName="<img>"></div>
+        <div class="tag tagLabel" data-tagName="<a>"></div>
+        <div class="tag tagLabel" data-tagName="<script>"></div>
+        <div class="tag tagLabel" data-tagName="<link>"></div>
+
+
+    </div>
+    <div id="canvas" class="dropzone tagBox" data-id="0">
+
+
+        <!--<div class="tagBox" data-tagName="<html>" tabindex="0">-->
+        <!--</div>-->
+
+    </div>
+    <div id="whiteSheet" class="" contenteditable="true">
+        <textarea></textarea>
+    </div>
+    <div id="propPanel">
+        <template id="attrTpl">
+            <div class="property">
+                <label data-label></label>
+                <input data-value>
+            </div>
+        </template>
+
+    </div>
+</div>
+
+<div class="footer"></div>
+
+
+    <script src="jquery1.9.js"></script>
+    <script src="jquery.mousewheel.min.js"></script>
+    <script src="jquery.mCustomScrollbar.min.js"></script>
+    <script src="interact.js"></script>
+    <script src="emmet.js"></script>
+    <script src="home.js"></script>
+    <script src="dom.js"></script>
+    <script src="layoutCreator.js"></script>
+    <script src="attributeManager.js"></script>
+
+
+
+</body>
+</html>
